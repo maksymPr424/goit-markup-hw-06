@@ -1,0 +1,75 @@
+body {
+  font-family: "Roboto" sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2%;
+  color: #434455;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.header-list  .header-item  a{
+    color: #2E2F42;
+}
+
+.header-list .header-item a:hover {
+    color: #404BBF;
+}
+
+.web-span {
+    color: #4D5AE5;
+}
+
+.web-studio {
+    color: #2E2F42;
+    font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 4%;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    color: white;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+p {
+    line-height: 14px;
+    letter-spacing: 4%;
+    color: #8E8F99;
+}
+
+.main-visit-button {
+    cursor: pointer;
+}
+
+.main-visit {
+    background-color: #2E2F42;
+}
+
+.team {
+    background-color: #F4F4FD;
+}
+
+.footer {
+    background-color: #2E2F42;
+}
