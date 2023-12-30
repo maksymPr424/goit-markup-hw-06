@@ -19,18 +19,16 @@ ul, ol {
     letter-spacing: 0.02em;
 }
 
-.header-list  .header-item  .header-item-link,
-.header-address-list .header-address-link {
-    color: #2E2F42;
-}
-
-.header-address-link {
+.header-link {
     color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
-.header-list .header-item .header-item-link:hover,
-.header-address .header-address-list .header-address-link:hover,
-.header-address .header-address-list .header-address-link:active {
+.header--link:focus,
+.header-link:hover,
+.header-link:active {
     color: #404BBF;
 }
 
@@ -59,21 +57,31 @@ a {
   letter-spacing: 4%;
 }
 
-h1 {
+.header-1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 60px;
     color: #ffffff;
 }
 
-h2 {
+.header-2 {
     font-weight: 700;
     font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
 }
 
-h3 {
+.header-3 {
     font-weight: 500;
     font-size: 20px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
 }
 
 p {
@@ -107,13 +115,7 @@ p {
     background-color: #404BBF;
 }
 
-.inform-header {
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.inform-text {
+.text {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:  #434455;
@@ -123,33 +125,9 @@ p {
     background-color: #F4F4FD;
 }
 
-.team-header {
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-.team-item-header {
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-.team-list {
+.team-item {
     background-color: #ffffff;
 }
-
-.team .team-text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-
 
 .footer {
     background-color: #2E2F42;
