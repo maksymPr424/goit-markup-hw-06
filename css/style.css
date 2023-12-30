@@ -8,46 +8,51 @@ body {
   background-color: #ffffff;
 }
 
-ul, ol {
-    list-style-type: none;
+ul,
+ol {
+  list-style-type: none;
 }
 
-.header-list{
-    line-height: 1.5;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+.header-list {
+  line-height: 1.5;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .header-link {
-    color: #2e2f42;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-address .header-link {
+  color: #434455;
 }
 
 .header-link:focus,
 .header-link:hover,
 .header-link:active {
-    color: #404BBF;
+  color: #404bbf;
 }
 
 .header-address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .web-span {
-    color: #2e2f42;
+  color: #2e2f42;
 }
 
 .web-studio {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    color: #4d5ae5;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #4d5ae5;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 a {
@@ -58,87 +63,91 @@ a {
 }
 
 .header-one {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 60px;
-    color: #ffffff;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #ffffff;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
 }
 
 .header-two {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 
 .header-three {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 
 p {
-    line-height: 14px;
-    letter-spacing: 4%;
-    color: #8E8F99;
+  line-height: 14px;
+  letter-spacing: 4%;
+  color: #8e8f99;
 }
 
 .main-visit-button {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.main-visit-button:focus {
+  background-color: #404bbf;
 }
 
 .main-visit {
-    background-color: #2E2F42;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
+  background-color: #2e2f42;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .main-visit-button {
-    background-color: #4D5AE5;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .main-visit-button:hover,
 .main-visit-button:active {
-    background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 .text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color:  #434455;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .team {
-    background-color: #F4F4FD;
+  background-color: #f4f4fd;
 }
 
 .team-item {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .footer {
-    background-color: #2E2F42;
+  background-color: #2e2f42;
 }
 
 .footer .text {
-    color: #F4F4FD;
+  color: #f4f4fd;
 }
 
 .footer .wep-span {
-    color: #f4f4fd;
+  color: #f4f4fd;
 }
