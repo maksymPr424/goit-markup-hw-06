@@ -20,13 +20,13 @@ ul, ol {
 }
 
 .header-link {
-    color: #434455;
+    color: #2e2f42;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.header--link:focus,
+.header-link:focus,
 .header-link:hover,
 .header-link:active {
     color: #404BBF;
@@ -57,14 +57,16 @@ a {
   letter-spacing: 4%;
 }
 
-.header-1 {
+.header-one {
     font-size: 56px;
     font-weight: 700;
     line-height: 60px;
     color: #ffffff;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
 }
 
-.header-2 {
+.header-two {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -74,10 +76,10 @@ a {
     color: #2e2f42;
 }
 
-.header-3 {
+.header-three {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.11;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -131,4 +133,12 @@ p {
 
 .footer {
     background-color: #2E2F42;
+}
+
+.footer .text {
+    color: #F4F4FD;
+}
+
+.footer .wep-span {
+    color: #f4f4fd;
 }
