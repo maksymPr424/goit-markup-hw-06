@@ -269,6 +269,10 @@ a {
   margin-bottom: 48px;
 }
 
+.portfolio-list:nth-child(n + 4) {
+  margin-bottom: 0;
+}
+
 .portfolio .portfolio-name {
   padding: 32px 16px;
   display: flex;
