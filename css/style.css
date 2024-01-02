@@ -1,9 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
   font-size: 16px;
-  letter-spacing: 2%;
   color: #434455;
   background-color: #ffffff;
 }
@@ -13,18 +10,15 @@ ol {
   list-style-type: none;
 }
 
-.header-list {
-  line-height: 1.5;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
 .header-link {
   color: #2e2f42;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.nav-link {
+  font-weight: 500;
 }
 
 .header-address .header-link {
@@ -85,16 +79,9 @@ a {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-}
-
-p {
-  line-height: 14px;
-  letter-spacing: 4%;
-  color: #8e8f99;
 }
 
 .main-visit-button {
@@ -129,7 +116,10 @@ p {
 .text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+}
+
+.team-list .header-three {
+  text-align: center;
 }
 
 .team {
