@@ -28,6 +28,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -55,7 +57,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: flex;
-  padding: 24px 0;
 }
 
 .nav-link {
@@ -81,7 +82,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin: 0;
   padding: 24px 0;
 }
 
@@ -90,7 +90,6 @@ img {
 }
 
 .web-studio {
-  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: #4d5ae5;
@@ -98,6 +97,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.logo-header {
+  margin-right: 76px;
 }
 
 a {
@@ -125,6 +128,7 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin: 0;
 }
 
 .header-three {
@@ -146,19 +150,6 @@ a {
   gap: 24px;
 }
 
-.main .container-visit {
-  background-color: #2e2f42;
-  margin: 0;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  gap: 50px;
-}
-
 .main-visit {
   background-color: #2e2f42;
   margin: 0;
@@ -170,7 +161,8 @@ a {
 }
 
 .main-visit .header-one {
-  margin-bottom: 8px;
+  margin: 0 auto;
+  margin-bottom: 48px;
   max-width: 496px;
 }
 
@@ -189,6 +181,7 @@ a {
   display: block;
   min-width: 169px;
   border: none;
+  margin: 0 auto;
 }
 
 .main-visit-button:hover,
@@ -207,10 +200,6 @@ a {
 .main .inform-list {
   padding: 120px 0;
   margin-right: 0;
-}
-
-.inform {
-  padding: 120px 0;
 }
 
 .inform-item {
@@ -265,11 +254,7 @@ a {
 
 .portfolio-list {
   flex-wrap: wrap;
-  column-gap: 24px;
-}
-
-.portfolio-item {
-  margin-bottom: 48px;
+  gap: 48px 24px;
 }
 
 .portfolio-item:nth-last-child(-n + 3) {
@@ -278,10 +263,7 @@ a {
 
 .portfolio .portfolio-name {
   padding: 32px 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+  margin-left: 0;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -311,7 +293,8 @@ a {
   color: #f4f4fd;
 }
 
-.footer .web-studio {
+.logo-footer {
+  margin-right: 0;
   display: inline-block;
   margin-bottom: 16px;
 }
