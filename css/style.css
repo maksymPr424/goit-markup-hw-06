@@ -101,6 +101,7 @@ img {
 
 .logo-header {
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 a {
@@ -143,7 +144,7 @@ a {
 
 .inform-list,
 .team-list,
-.container .portfolio-list {
+.portfolio-list {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -197,7 +198,7 @@ a {
   margin: 0;
 }
 
-.main .inform-list {
+.inform {
   padding: 120px 0;
   margin-right: 0;
 }
