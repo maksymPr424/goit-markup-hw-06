@@ -40,6 +40,7 @@ img {
 .header-address {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .header {
@@ -82,7 +83,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .web-span {
@@ -101,7 +101,6 @@ img {
 
 .logo-header {
   margin-right: 76px;
-  padding: 24px 0;
 }
 
 a {
