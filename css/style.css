@@ -77,16 +77,12 @@ img {
   font-style: normal;
 }
 
-.header-item,
-.header-address-item {
-  padding: 24px 0;
-}
-
 .header-address-list,
 .header-list {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .web-span {
