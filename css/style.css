@@ -37,11 +37,19 @@ img {
 }
 
 .inform-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   padding: 24px 100px;
   border-radius: 4px;
   border: 1px solid #8e8f99;
   background-color: #f4f4fd;
   margin-bottom: 8px;
+}
+
+.header-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav,
@@ -52,6 +60,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -66,6 +76,7 @@ img {
   letter-spacing: 0.02em;
   display: flex;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link {
@@ -86,7 +97,7 @@ img {
   background-color: #404bbf;
   border-radius: 2px;
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
 }
 
 .nav-link:hover:after {
@@ -96,12 +107,12 @@ img {
   background-color: #404bbf;
   border-radius: 2px;
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
 }
 
 .header-address .header-link {
   color: #434455;
-  transition: color 250ms ease-in-out cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:focus,
@@ -187,15 +198,16 @@ a {
 }
 
 .main-visit {
+  max-width: 1440px;
   background-color: #2e2f42;
   background-image: linear-gradient(
-      to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office\ 1.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
   text-align: center;
   display: flex;
@@ -226,8 +238,7 @@ a {
   min-width: 169px;
   border: none;
   margin: 0 auto;
-  transition: background-color 250ms ease-in-out cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms ease-in-out cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-visit-button:hover,
@@ -275,6 +286,8 @@ a {
   text-align: center;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
@@ -291,7 +304,7 @@ a {
   margin-bottom: 8px;
 }
 
-.team-social {
+.social-list {
   display: flex;
   gap: 24px;
   margin: 0;
@@ -299,17 +312,28 @@ a {
   justify-content: center;
 }
 
-.social-item {
+.social-link,
+.footer-social-item {
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
   border: none;
   max-width: 40px;
   max-height: 40px;
   padding: 12px;
-  transition: background-color 250ms ease cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-item:hover .social-item {
+.icon {
+  fill: #f4f4fd;
+}
+
+.social-link:hover,
+.social-link:focus {
   background-color: #404bbf;
 }
 
@@ -333,13 +357,21 @@ a {
 .help-portfolio-container {
   margin: 0;
   position: relative;
-
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 }
 
 .overlay {
+  margin: 0;
+  position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.overlay-text {
   display: block;
-  padding: 40px 32px 0;
+  padding: 40px 32px;
   color: #f4f4fd;
   background-color: #4d5ae5;
   width: 100%;
@@ -349,11 +381,10 @@ a {
   left: 0px;
   transform: translateY(100%);
   box-shadow: none;
-  transition: transform 250ms ease cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms ease cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .overlay {
+.portfolio-item:hover .overlay-text {
   transform: translateY(0);
 }
 
@@ -387,14 +418,20 @@ a {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: left;
   gap: 120px;
 }
 
+.footer-info {
+  margin-right: 120px;
+}
+
 .footer-social-text {
+  font-weight: 500;
   color: #ffffff;
   margin-bottom: 16px;
+  font-size: 16px;
 }
 
 .footer-social-item {
@@ -406,7 +443,7 @@ a {
   background-color: #31d0aa;
 }
 
-.footer .text {
+.footer-text {
   color: #f4f4fd;
   max-width: 264px;
 }
