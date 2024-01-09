@@ -342,6 +342,7 @@ a {
 }
 
 .icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #f4f4fd;
 }
 
@@ -608,7 +609,7 @@ label {
   margin-right: 8px;
 }
 
-.label-div {
+.label-div-container {
   margin-top: 4px;
   position: relative;
 }
@@ -695,7 +696,6 @@ label {
   top: 50%;
   transform: translateY(-50%);
   left: 16px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus .modal-input-icon {
