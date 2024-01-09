@@ -635,6 +635,11 @@ label {
   border-color: #4d5ae5;
 }
 
+.modal-input:focus + .modal-input-icon {
+  
+  fill: #4d5ae5;
+}
+
 .modal-textarea {
   width: 100%;
   height: 120px;
@@ -680,6 +685,7 @@ label {
 }
 
 .modal-input-icon {
+  fill: #2E2F42;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -713,8 +719,8 @@ label {
   background-color: #e7e9fc;
 }
 
-.button-close-svg:hover,
-.button-close-svg:focus {
+.button-close:hover .button-close-svg,
+.button-close:focus .button-close-svg{
   fill: #ffffff;
 }
 
@@ -729,6 +735,7 @@ label {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: #2E2F42;
 }
 
 .is-open {
