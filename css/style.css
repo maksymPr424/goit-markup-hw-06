@@ -447,6 +447,7 @@ a {
 }
 
 .footer-text {
+  max-width: 264px;
   color: #ffffff;
   font-weight: 500;
   margin-bottom: 16px;
@@ -468,11 +469,6 @@ a {
 
 .footer-social-list {
   gap: 16px;
-}
-
-.footer-text {
-  color: #f4f4fd;
-  max-width: 264px;
 }
 
 .footer .web-span {
