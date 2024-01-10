@@ -447,10 +447,13 @@ a {
 }
 
 .footer-text {
-  color: #ffffff;
   font-weight: 500;
   margin-bottom: 16px;
   font-size: 16px;
+}
+
+.nipon {
+  color: #ffffff;
 }
 
 .modal-text {
