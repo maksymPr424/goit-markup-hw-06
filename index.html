@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework5</title>
+    <title>Homework6</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -44,18 +44,26 @@
 
         <address class="header-address">
           <ul class="header-address-list">
-            <li class="header-address-item">
+            <li class="header-item header-address-item">
               <a class="header-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="header-address-item">
+            <li class="header-item header-address-item">
               <a class="header-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <div class="burger-menu">
+          <svg class="icon icon-menu" width="24" height="24">
+            <use
+              class="inform-item-icon"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+          </svg>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -135,11 +143,12 @@
       </section>
 
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="header-two">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="./images/mark.jpg 1x, ./images/mark-2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -199,6 +208,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -258,6 +268,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/camila.jpg 1x, ./images/camila-2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -317,6 +328,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/daniel.jpg 1x, ./images/daniel-2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -385,9 +397,10 @@
             <li class="portfolio-item">
               <div class="overlay">
                 <img
+                srcset="./images/BankingApp.jpg 1x, ./images/BankingApp-2x.jpg 2x"
                   src="./images/BankingApp.jpg"
                   alt="Banking App"
-                  width="360"
+                  width="356"
                 />
                 <p class="text overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -404,9 +417,10 @@
             <li class="portfolio-item">
               <div class="overlay">
                 <img
+                srcset="./images/CashlessPayment.jpg 1x, ./images/CashlessPayment-2x.jpg 2x"
                   src="./images/CashlessPayment.jpg"
                   alt="Cashless Payment"
-                  width="360"
+                  width="356"
                 />
                 <p class="text overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -422,9 +436,10 @@
             <li class="portfolio-item">
               <div class="overlay">
                 <img
+                srcset="./images/MeditationApp.jpg 1x, ./images/MeditationApp-2x.jpg 2x"
                   src="./images/MeditationApp.jpg"
                   alt="Meditation App"
-                  width="360"
+                  width="356"
                 />
                 <p class="text overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -440,9 +455,10 @@
             <li class="portfolio-item">
               <div class="overlay">
                 <img
+                srcset="./images/TaxiService.jpg 1x, ./images/TaxiService-2x.jpg 2x"
                   src="./images/TaxiService.jpg"
                   alt="Taxi Service"
-                  width="360"
+                  width="356"
                 />
                 <p class="text overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -458,9 +474,10 @@
             <li class="portfolio-item">
               <div class="overlay">
                 <img
+                srcset="./images/ScreenIllustrations.jpg 1x, ./images/ScreenIllustrations-2x.jpg 2x"
                   src="./images/ScreenIllustrations.jpg"
                   alt="Screen Illustrations"
-                  width="360"
+                  width="356"
                 />
                 <p class="text overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -477,9 +494,10 @@
             <li class="portfolio-item">
               <div class="overlay">
                 <img
+                srcset="./images/OnlineCourses.jpg 1x, ./images/OnlineCourses-2x.jpg 2x"
                   src="./images/OnlineCourses.jpg"
                   alt="Online Courses"
-                  width="360"
+                  width="356"
                 />
                 <p class="text overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -508,7 +526,7 @@
           </p>
         </div>
         <div class="footer-social-container">
-          <p class="text footer-text">Social media</p>
+          <p class="text footer-media-text">Social media</p>
           <ul class="footer-social-list">
             <li class="social-item footer-social-item">
               <a href="" class="footer-social-link">
@@ -563,6 +581,80 @@
         </div>
       </div>
     </footer>
+
+    <div class="burger-modal-menu">
+      <div class="burger-container">
+        <div class="under-modal-div">
+          <div class="button-close-div">
+            <button type="button" class="modal-button-close">
+              <svg class="icon modal-button-close-svg" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="header-nav modal-nav">
+            <ul class="modal-menu-list modal-upp-list">
+              <li class="modal-menu-item">
+                <a class="active-page modal-link" href="./index.html">Studio</a>
+              </li>
+              <li class="modal-menu-item">
+                <a class="modal-link" href="">Portfolio</a>
+              </li>
+              <li class="modal-menu-item">
+                <a class="modal-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="down-modal-div">
+          <address class="header-address">
+            <ul class="modal-menu-list modal-down-list">
+              <li class="modal-menu-item header-address-item">
+                <a class="modal-link-address" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="modal-menu-item header-address-item">
+                <a class="modal-link-address" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="modal-social-list">
+            <li class="social-item">
+              <a href="" class="social-link">
+                <svg class="icon social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link">
+                <svg class="icon social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link">
+                <svg class="icon social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="social-link">
+                <svg class="icon social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="section-modal-form">
       <div class="modal-form-container">
         <button type="button" class="button-close">
