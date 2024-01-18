@@ -923,7 +923,6 @@ label {
 
   .main-visit .header-one {
     margin: 0 auto;
-    margin-bottom: 0;
   }
 
   .main-visit {
@@ -1085,12 +1084,8 @@ label {
 }
 
   .container {
-    width: 1150px;
+    width: 100%;
     padding: 0 15px;
-  }
-
-  .team-container {
-    padding: 0;
   }
 
   .header-address-list {
@@ -1127,7 +1122,6 @@ label {
 
   .team-list {
     display: flex;
-    padding: 0 11px;
   }
 
   .team-item {
@@ -1135,8 +1129,8 @@ label {
   }
 
   .portfolio-list {
+    justify-content: center;
     gap: 48px 24px;
-    padding: 0 11px;
   }
 
   .portfolio-item {
@@ -1156,8 +1150,9 @@ label {
   }
 
   .footer-social-container {
-    margin-right: 40px;
+    margin-right: 80px;
   }
+  /* 5px */
 }
 
 @media (min-resolution: 192dpi) {
